@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node backend/server.js",
     "dev": "nodemon backend/server.js",
-    "build": "echo 'No build step required for Node.js'",
+    "build": "node ./scripts/build-static.js",
     "lint": "eslint backend/**/*.js"
   },
   "dependencies": {
@@ -26,6 +26,7 @@
     "nodemon": "^3.1.3"
   },
   "engines": {
-    "node": ">=18.0.0"
-  }
+    "node": "20.x || 22.x"
+  },
+  "packageManager": "pnpm@11.5.2"
 }
